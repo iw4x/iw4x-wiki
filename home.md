@@ -1,5 +1,5 @@
 <!-- TITLE:IW4x - MW2 Wiki home page -->
-# IW4x and Modern Warfare 2 Wiki
+
 Welcome to this home page!
 This repository aims to document the behaviour of the engine behind Call Of Duty: Modern Warfare 2 aswell as the open-source client working with it, IW4x.
 Enjoy your stay!
