@@ -30,3 +30,6 @@ The game is split in two - a **singleplayer** (iw4sp) and a **multiplayer** part
 On PC, the game uses Steam as a mandatory third-party to ensure ownership validation and player verification. The same is not true of Call Of Duty 4, where CD-Keys from retail work independently from Steam.
 If you want to play or investigate on MW2 - or contribute to the IW4x project to that regard - you **must** own a valid Steam digital license for Call Of Duty: Modern Warfare 2.
 
+This wiki section will be divided in multiple parts:
+- **The assets** the game works with, both loaded and streamed
+- **The engine** that works the assets, reads and uses them
