@@ -13,7 +13,7 @@ Here are the denominations used throughout this wiki:
 | Call Of Duty 4 : Modern Warfare    | 2007     | Infinity Ward | IW3 or CoD4 or MW1 |
 | Call Of Duty : Modern Warfare 2    | 2009     | Infinity Ward | IW4 or MW2 |
 | Call Of Duty : Modern Warfare 3    | 2011     | Infinity Ward and Raven Software | IW5 or MW3|
-| Call Of Duty 4 : Modern Warfare    | 2007     | Infinity Ward | IW3 or CoD4 or MW1 |
-| Call Of Duty : Modern Warfare 2    | 2009     | Infinity Ward | IW4 or MW2 |
-| Call Of Duty : Modern Warfare 3    | 2011     | Infinity Ward and Raven Software | IW5 or MW3|
+| Call Of Duty : World At War   | 2008     | Treyarch | T4 |
+| Call Of Duty : Black Ops    | 2010     | Treyarch | T5 |
+
 
