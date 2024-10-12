@@ -22,4 +22,11 @@ The single best known ancestor with which Call Of duty shares DNA is **Quake III
 The first Call Of Duty is derived from RTC:W,  and then IW2 is derived from Call Of Duty, IW3 from IW2, and so on. Each game brings its shares of modifications over the previous one, but some areas move more than others. 
 - Player movement, animations, physics, weaponry, scripting, gets expanded starting from IW2 but is never very far.
 - Rendering changes drastically over the years, both the method of rendering and the rendering programs themselves (shaders). Multiplayer, in particular the session/party/server system, undergoes regular changes too.
+- Accross different platforms (PC, Mac, Wii, Xbox360, PS3) the game retains its core but some parts, like rendering, input management, filesystem access and live services, are drastically different.
 - Starting from IW3, two branches of the engine coexist: the *treyarch* branch (IW3 => T4 => T5) and the *infinity ward* branch (IW3 => IW4 => IW5). As a result, while IW4 and IW5 are extremely close in all matters, IW4 and T5 are worlds apart.
+# Structure
+The game is split in two - a **singleplayer** (iw4sp) and a **multiplayer** part. This wiki is mostly interested in the multiplayer part, which is the part IW4x is built on - but a lot of the informations here are also true for the singleplayer part of the game.
+
+On PC, the game uses Steam as a mandatory third-party to ensure ownership validation and player verification. The same is not true of Call Of Duty 4, where CD-Keys from retail work independently from Steam.
+If you want to play or investigate on MW2 - or contribute to the IW4x project to that regard - you **must** own a valid Steam digital license for Call Of Duty: Modern Warfare 2.
+
