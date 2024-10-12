@@ -7,7 +7,13 @@ The engine Call Of Duty: Modern Warfare 2 runs on is indissociable from the game
 There are two main branches of the Call Of Duty Engine we will be interested in - the one maintained historically by **Infinity Ward** (IW) and the one maintained by **Treyarch** (T).
 Here are the denominations used throughout this wiki:
 
-| Game | Release date | Developer | Appellations | 
-| -------- | -------- | -------- | -------- | -------- |
-| Call Of Dutyy 1     | Text     | Text     | Text     | Text     |
+| Game | Release date | Developer | Referred to as... | 
+| -------- | -------- | -------- | -------- | 
+| Call Of Duty 2    | 2005     | Infinity Ward | IW2  or CoD 2 |
+| Call Of Duty 4 : Modern Warfare    | 2007     | Infinity Ward | IW3 or CoD4 or MW1 |
+| Call Of Duty : Modern Warfare 2    | 2009     | Infinity Ward | IW4 or MW2 |
+| Call Of Duty : Modern Warfare 3    | 2011     | Infinity Ward and Raven Software | IW5 or MW3|
+| Call Of Duty 4 : Modern Warfare    | 2007     | Infinity Ward | IW3 or CoD4 or MW1 |
+| Call Of Duty : Modern Warfare 2    | 2009     | Infinity Ward | IW4 or MW2 |
+| Call Of Duty : Modern Warfare 3    | 2011     | Infinity Ward and Raven Software | IW5 or MW3|
 
