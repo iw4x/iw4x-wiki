@@ -39,3 +39,13 @@ IW4x consists of 2 main parts:
     - [Zeroy wiki](https://wiki.zeroy.com/index.php?title=Main_Page)
     - [Modme scripting guide](https://wiki.modme.co/wiki/black_ops_3/guides/Scripting-guide.html)
     - [Plutonium How to](https://plutonium.pw/docs/modding/gsc/how-to-gsc/)
+
+# How to install IW4x
+We recommend installing IW4x using the AlterWare Launcher [[Website](https://alterware.dev/), [GitHub](https://github.com/mxve/alterware-launcher/)] for easy updating.
+
+Installing IW4x manually is almost as easy, you need to acquire 3 things:
+- A copy of Call of Duty: Modern Warfare 2 (2009), which you can get on [Steam](https://store.steampowered.com/app/10180/Call_of_Duty_Modern_Warfare_2_2009/)
+- The [IW4x Client](https://github.com/iw4x/iw4x-client/releases/latest)
+- And the [IW4x Rawfiles](https://github.com/iw4x/iw4x-rawfiles/releases/latest)
+
+To install IW4x simply extract the client and rawfiles to your MW2 base directory, running iw4x.exe should now start up IW4x.
