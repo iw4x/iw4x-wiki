@@ -15,12 +15,12 @@ Every asset has a **name**, although it is not unique and not stored in the same
 | 2     | XAnimParts | Animations for a set of bones, often used with XModels too. Somewhat esoteric structure with a looot of data, from which the game reconstructs live animations |
 | 3 |   XModelSurfaces | A **surface** is how the game calls a mesh, or a continuous mesh. A XModelSurfaces is a group of one or more meshes
 | 4 |   XModel | A XModel is an ensemble of surfaces, materials, collisions, skeleton and physical properties that constitute a model for the game - with up to 4 LODs. |
-| 5 |   [Materials](/read/modern-warfare-2/assets/materials.md)  | Materials are sets of textures and parameters to apply said textures onto a surface, aswell as reference to a technique set (rendering passes informations) |
-| 6 |   [Pixel Shader](/read/modern-warfare-2/assets/pixel-&-vertex-shaders.md)  | A Pixel Shader is a computer program that is called for each pixel of a drawn object - usually with data passed along from a Vertex Shader. |
-| 7 |   [Vertex Shader](/read/modern-warfare-2/assets/pixel-&-vertex-shaders.md) | Vertex Shaders are computer programs called once for each vertex for a drawn object, then pass the resulting info to a Pixel Shader |
+| 5 |   [Materials](/modern-warfare-2/assets/materials.md)  | Materials are sets of textures and parameters to apply said textures onto a surface, aswell as reference to a technique set (rendering passes informations) |
+| 6 |   [Pixel Shader](/modern-warfare-2/assets/pixel-&-vertex-shaders.md)  | A Pixel Shader is a computer program that is called for each pixel of a drawn object - usually with data passed along from a Vertex Shader. |
+| 7 |   [Vertex Shader](/modern-warfare-2/assets/pixel-&-vertex-shaders.md) | Vertex Shaders are computer programs called once for each vertex for a drawn object, then pass the resulting info to a Pixel Shader |
 | 8 |   Vertex Declaration | Vertex declarations describe which data from the game should be routed to a vertex shader (vertex position, color, texture coordinates, ...?) |
-| 9 |   [Technique Set](/read/modern-warfare-2/assets/technique-sets.md)  | A technique set is an ensemble of up to 48 techniques (34 for MW1) describing different render passes the game should combine to draw a material. |
-| 10 |   [Images](/read/modern-warfare-2/assets/gfximages.md) | While image data is [streamed](/read/modern-warfare-2/assets/streamed-files.md), each image has a corresponding GfxImage Asset which contains metadata about the texture |
+| 9 |   [Technique Set](/modern-warfare-2/assets/technique-sets.md)  | A technique set is an ensemble of up to 48 techniques (34 for MW1) describing different render passes the game should combine to draw a material. |
+| 10 |   [Images](/modern-warfare-2/assets/gfximages.md) | While image data is [streamed](/modern-warfare-2/assets/streamed-files.md), each image has a corresponding GfxImage Asset which contains metadata about the texture |
 | 11 |   Sound | "Sounds" are in reality sound alias lists, which mean they contain one or more definitions for sounds that should be played (distance, mixing, pitch, etc) |
 | 12 |   Sound Curve | Simple definition files used by sound aliases to define how the game should behave over a distance |
 | 13 |   Loaded sound | A wrapper for a sound that was fully loaded in memory by Miles Sound System |
@@ -46,7 +46,7 @@ Every asset has a **name**, although it is not unique and not stored in the same
 | 33 |   Mp Type | Might be unused in this form - probably references mptype CSVs during building a level, a mptype being a set of characters to build into a map |
 | 34 |   Character | Same as Mp Type - usually present as a rawfile (GSC Script) in the final game, this might have been used during level building only |
 | 35 |   XModelAlias | Same as above |
-| 36 |   [Rawfiles](/read/modern-warfare-2/assets/rawfiles.md) | Rawfiles are all files the game will do case-by-case parsing for - they can be scripts, vision files, anything that usually involve a form of Com_Parse |
+| 36 |   [Rawfiles](/modern-warfare-2/assets/rawfiles.md) | Rawfiles are all files the game will do case-by-case parsing for - they can be scripts, vision files, anything that usually involve a form of Com_Parse |
 | 37 |   Stringtable |  |
 | 38 |   Leaderboard | |
 | 39 |   Structured Data Definition | Similar to a struct in a headerfile in C++, a structured data definition outline how some specific data - usually player data - should be stored, so that the game can migrate between different definitions of a same data. |
