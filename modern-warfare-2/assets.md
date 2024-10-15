@@ -36,7 +36,7 @@ Every asset has a **name**, although it is not unique and not stored in the same
 | 23 |   Ui Map | |
 | 24 |   Font | A font contains materials and the glyph table necessary to draw characters on screen |
 | 25 |   MenuList | A transient asset that usually doesn't live in memory for too long (?) and contains a list of menus to load, or to unload. E.g. 'ingame menus', 'main menu', etc |
-| 26 |   Menu | All menus displayed in the game exist as a singular Menu asset in memory, which itself can reference other menus or share data with other menus from the same zone. |
+| 26 |   Menu | Each menu displayed in the game exists as a singular Menu asset in memory, which itself can reference other menus or share data with other menus from the same zone. |
 | 27 |   Localized Entry | Smallest struct in the game: a localized entry is just a Key and a Translated value. 'MPUI_HIGHRISE' => 'Highrise' - and that's one whole localized entry asset. |
 | 28 |   Weapon | Weapons are the biggest structs in the game besides GfxWorld and Clipmap, and contain every single thing a weapon need to work in the game - materials, sounds, animations, ... |
 | 29 |   SndDriver Globals | (what is it for? sound globals are registered as a non-asset singleton by IW4...) | 
