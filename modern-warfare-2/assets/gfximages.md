@@ -8,7 +8,7 @@ They are mostly referenced to from other assets via [materials](/modern-warfare-
 | -------- | -------- | -------- |
 | 3 | MAPTYPE_2D | A two dimensional texture |
 | 4 | MAPTYPE_3D | The texture is a volume and should be loaded into a IDirect3DVolumeTexture9 |
-| 5 | MAPTYPE_CUBE | The image has a single-dimension (gradient)  |
+| 5 | MAPTYPE_CUBE | The texture has 6 sides and should be loaded into a IDirect3DCubeTexture9  |
 
 
 ## Texture
