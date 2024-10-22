@@ -42,6 +42,16 @@ This property is usually redundant and gives information about which sampler a m
 | Number | Semantic | Description |
 | -------- | -------- | -------- |
 | 0     | 2D     | Used for images drawn on screen (menus, HUD, etc) |
-| 0     | 2D     | Used for images drawn on screen (menus, HUD, etc) |
-| 0     | 2D     | Used for images drawn on screen (menus, HUD, etc) |
+| 1     | Function     | This image is a lookup table for a shader or a material to use |
+| 2     | Color     | Used for images drawn on screen (menus, HUD, etc) |
+| 3     | Detail     | A detail map is a second color map drawn ontop of the color map to add some noise and grain to the render - usually it's repeated and drawn over the color map many times. |
+| 5     | Normal    | Normal maps change the way lighting interacts with the surface to create the impression of volume |
+| 8     | Specular    | Speculars are used to intensify lighting depending on the angle between the view and the model and create a reflection effect |
+| 11     | Water    | User for water textures which are a very special kind of runtime-computed surface |
+
+### Image category
+This is a very important information that tells the game how to recover the image when the Direct3D device is lost or recovered - whenever the game goes in background and loses its render, or is brought back from background and has to render again, it uses the image category of each loaded texture to decide what to do about it.
+
+If the image category is wrong, the engine will accept it, but as soon as it needs to recover it after a device change it will trip and fall with a DirectX error.
+
 
