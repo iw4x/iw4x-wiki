@@ -33,5 +33,15 @@ The load definition of a texture has various properties:
 | IMG_FLAG_NORMALMAP | The image is a normal map |
 | IMG_FLAG_INTENSITY_TO_ALPHA | Usage unknown |
 | IMG_FLAG_DYNAMIC | Usage unknown - maybe related to dynamic images created to sample model lighting and code images |
-| IMG_FLAG_RENDER_TARGET | Usage unknown - probably used to play a video or a camera screen? |
+| IMG_FLAG_RENDER_TARGET | Only available with the 2D texture semantic - render target textures are filled at runtime with data from the rendered scene, to compute reflections and post process effects. |
 | IMG_FLAG_SYSTEMMEM | Usage unknown |
+
+### Texture semantic
+This property is usually redundant and gives information about which sampler a material is supposed to use it with:
+
+| Number | Semantic | Description |
+| -------- | -------- | -------- |
+| 0     | 2D     | Used for images drawn on screen (menus, HUD, etc) |
+| 0     | 2D     | Used for images drawn on screen (menus, HUD, etc) |
+| 0     | 2D     | Used for images drawn on screen (menus, HUD, etc) |
+
