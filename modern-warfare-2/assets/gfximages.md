@@ -58,7 +58,7 @@ This property is usually redundant and gives information about which sampler a m
 | 11     | Water    | User for water textures which are a very special kind of runtime-computed surface |
 
 ## Image category
-This is a very important information that tells the game how to recover the image when the Direct3D device is lost or recovered - whenever the game goes in background and loses its render, or is brought back from background and has to render again, it uses the image category of each loaded texture to decide what to do about it.
+**This is a very important information that tells the game how to recover the image when the Direct3D device is lost or recovered **- whenever the game goes in background and loses its render, or is brought back from background and has to render again, it uses the image category of each loaded texture to decide what to do about it.
 
 If the image category is wrong, the engine will accept it, but as soon as it needs to recover it after a device change it will trip and fall with a DirectX error.
 
@@ -69,7 +69,7 @@ If the image category is wrong, the engine will accept it, but as soon as it nee
 | 3     | LoadFromFile  | This image data is expected to be read from the `images/` folder in an IWD, with the \*.iwi extension. The vast majority of IW4 images have this category. |
 | 4 | Raw | Not sure - might be used for reflection probes and other memory-loaded kind of images? |
 | 5 | Water | Not sure - A texture generated from water data? Redundant from Texture Semantic? |
-| 6 | Render Target | Not sure - Redunduant from Texture Semantic? |
+| 6 | Render Target | Not sure - Redundant from Texture Semantic? |
 
 ## Picmip
 GfXImages that use mipmaps have two indices for the "best" mipmap to pick - one for the usual scenario (the first one) and one for the min-spec worst case scenario (the second one). This information can be globally overwritten on load depending on the `r_picmip` dvars values.
