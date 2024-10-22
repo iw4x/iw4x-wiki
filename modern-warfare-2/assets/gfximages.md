@@ -6,6 +6,11 @@ They are mostly referenced to from other assets via [materials](/modern-warfare-
 ## Texture
 The texture in the game files is a reference to a `GfxImageLoadDef`, an instruction about how to load the actual texture in memory - once the GfxImage is loaded by the game, this reference is **replaced** by an appropriate DirectX9 loaded texture (IDirect3DTexture9, ...)
 
+Most images are loaded from [IWI files](/modern-warfare-2/assets/streamed-files.md) but some of them are entirely contained within the image asset instead - the lightmaps, reflection probes are like this for instance.
+:::info 
+ZoneBuilder stores loaded-images as IW4xImage files, as their own format - other images are usually found as IWI files inside IWD archives the game ships with.
+:::
+
 The load definition of a texture has various properties:
 
 ### Texture flags
