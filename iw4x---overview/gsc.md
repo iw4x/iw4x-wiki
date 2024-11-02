@@ -4,26 +4,6 @@
 
 GSC (Game Script Code) is a scripting language designed for creating and managing game logic, behaviors, and interactions within the game environment. This documentation provides a comprehensive overview of the GSC syntax and operators. It also highlights IW4X-specific extensions and functionalities that enhance the standard GSC capabilities.
 
-## Table of Contents
-
-- [Basic Syntax](#basic-syntax)
-- [Variables and Data Types](#variables-and-data-types)
-- [Functions](#functions)
-  - [Function Definition](#function-definition)
-  - [Mandatory and Optional Arguments](#mandatory-and-optional-arguments)
-- [Control Structures](#control-structures)
-  - [Conditional Statements](#conditional-statements)
-  - [Loops](#loops)
-- [Operators](#operators)
-- [Arrays](#arrays)
-- [Threads and Coroutines](#threads-and-coroutines)
-- [Entities and Entity Functions](#entities-and-entity-functions)
-- [Events and Endons](#events-and-endons)
-- [Event Notifications](#event-notifications)
-- [Comments](#comments)
-- [IW4X-Specific Features](#iw4x-specific-features)
-- [Examples](#examples)
-
 ## Basic Syntax
 
 GSC scripts are organized into functions and threads that define the behavior of game entities. Functions are declared using their name followed by parentheses, containing parameters if any. Code blocks are enclosed within braces `{}`.
