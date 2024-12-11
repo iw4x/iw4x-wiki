@@ -90,7 +90,8 @@ if (condition)
 
 Loops allow for repeated execution of code blocks.
 GSC supports `for`, `foreach` and `while` loops. Infinite loops are usually created using `for (;;)`.
-Loops can be paused until a certain event occurs, for example `waittill("connected", player);` will pause the thread until a player connects to the match. `wait(0.1)` is used to pause the thread for a set amount of time. The minimum wait time used is usually 0.05.
+Loops can be paused until a certain event occurs, for example `waittill("connected", player);` will pause the loop until a player connects to the match. `wait(0.1)` is used to pause the loop for a set amount of time. The minimum wait time used is usually 0.05. Loops support the typical `continue` and `break` statements.
+
 
 ```cpp
 for (;;)
@@ -171,6 +172,7 @@ init()
 
 onPlayerConnect()
 {
+    // This thread does not contain an endon, so it will run until the match ends or the map changes.
     while (true)
     {
         level waittill("connected", player);
@@ -180,6 +182,7 @@ onPlayerConnect()
 
 onPlayerSpawned()
 {
+    // This thread will end itself when the player disconnects
     self endon("disconnect");
     while (true)
     {
