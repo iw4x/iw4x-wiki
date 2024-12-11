@@ -10,6 +10,12 @@ To open the console, press `~` (tilde) on your keyboard. This key may differ by 
 The IW4x console supports autocompletion, so you can type the beginning of a DVar name and press `tab` to autocomplete it.
 You can expand the whole console using `shift + ~`.
 
+Changing the value of a DVar/executing a command is as simple as typing it, followed by its value and pressing `enter`.
+```
+com_maxfps 333{ENTER}
+```
+
+
 If you want to set the value of a new/undefined DVar, you can do so using the `set` command:
 
 ```
@@ -26,3 +32,37 @@ Config files can be loaded using the `exec` command.
 ```
 exec my_custom_config.cfg
 ```
+
+# Commonly modified DVars
+
+
+| DVar | Example | Description |
+| -------- | -------- | -------- |
+| name | name "Unknown Soldier" | Changes the player name |
+| unlockstats | unlockstats | Unlock everything and rank up to max prestige |
+| cg_fov | cg_fov 90 (default 65) | Changes your field of view |
+| sensitivity | sensitivity 0.9 | Used to fine- |
+|  |  |  |
+|  |  |  |
+|  |  |  |
+|  |  |  |
+|  |  |  |
+|  |  |  |
+|  |  |  |
+|  |  |  |
+|  |  |  |
+|  |  |  |
+|  |  |  |
+|  |  |  |
+|  |  |  |
+|  |  |  |
+|  |  |  |
+|  |  |  |
+|  |  |  |
+|  |  |  |
+|  |  |  |
+|  |  |  |
+|  |  |  |
+|  |  |  |
+|  |  |  |
+|  |  |  |
