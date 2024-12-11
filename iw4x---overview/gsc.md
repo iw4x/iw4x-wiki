@@ -8,7 +8,7 @@ Your most important resource for modding will be a [GSC dump](https://github.com
 
 ## Variables and Data Types
 
-GSC supports various data types, including integers, floats, strings, vectors, and entities. Variables are dynamically typed and can be assigned without explicit type declarations.
+GSC supports various data types, including integers, floats, strings, arrays, vectors, and entities. Variables are dynamically typed and can be assigned without explicit type declarations.
 
 ```cpp
 score = 0;
