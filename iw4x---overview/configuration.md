@@ -33,36 +33,29 @@ Config files can be loaded using the `exec` command.
 exec my_custom_config.cfg
 ```
 
-# Commonly modified DVars
+# Commonly DVars/Commands
 
 
-| DVar | Example | Description |
+| DVar/Command | Example | Description |
 | -------- | -------- | -------- |
 | name | name "Unknown Soldier" | Changes the player name |
 | unlockstats | unlockstats | Unlock everything and rank up to max prestige |
 | cg_fov | cg_fov 90 (default 65) | Changes your field of view |
-| sensitivity | sensitivity 0.9 | Used to fine- |
-|  |  |  |
-|  |  |  |
-|  |  |  |
-|  |  |  |
-|  |  |  |
-|  |  |  |
-|  |  |  |
-|  |  |  |
-|  |  |  |
-|  |  |  |
-|  |  |  |
-|  |  |  |
-|  |  |  |
-|  |  |  |
-|  |  |  |
-|  |  |  |
-|  |  |  |
-|  |  |  |
-|  |  |  |
-|  |  |  |
-|  |  |  |
-|  |  |  |
-|  |  |  |
-|  |  |  |
+| sensitivity | sensitivity 0.9 | Used to fine-tune your mouse sensitivity |
+| intro | intro 0 | Toggle the IW4x intro on startup |
+| cg_drawfps | cg_drawFPS 1 | Display the FPS counter |
+| cl_yawspeed | cl_yawspeed 800 | Adjust the yaw(turn)speed |
+| customtitle | customtitle "IW4x" | Sets a custom title on your calling card |
+| com_maxfps | com_maxfps 333 | Sets the FPS limit |
+| connect | connect 127.0.0.1:26960 | Connect to a server |
+| map | map mp_rust | Change the current map |
+| fast_restart | fast_restart | Restart the current map without loading screen |
+| map_restart | map_restart | Restart the current map |
+| devmap | devmap mp_rust | Load a map with sv_cheats enabled  |
+| developer | developer 1 | Enable developer debug mode |
+| god | god | Makes the player invinicible |
+| ufo | ufo | Enable ufo mode |
+| noclip | noclip | Disables collosions and allows the player to fly |
+| g_gametype | g_gametype gun | Change the gametype |
+| rcon login | rcon login [password] | Login to rcon server console |
+| rcon | rcon map mp_rust | Execute command on the rcon server |
