@@ -19,7 +19,7 @@ set cg_coolDvar 1
 # Configuration Files
 IW4x automatically loads `players/iw4x_config.cfg`, which is the default config file.
 
-Server configs are stored in the userraw folder instead, they can be named however you like. Pre-made configs are available on [GitHub](https://github.com/iw4x/iw4-server-configs). On servers `userraw/autoexec.cfg` will also be executed automatically.
+Server configs are stored in the userraw folder instead, they can be named however you like. Pre-made configs are available on [GitHub](https://github.com/iw4x/iw4-server-configs). On servers `userraw/autoexec.cfg` or `mods/modname/autoexec.cfg` will also be executed automatically.
 
 Config files can be loaded using the `exec` command.
 
