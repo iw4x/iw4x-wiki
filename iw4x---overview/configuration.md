@@ -2,11 +2,14 @@
 
 IW4x (and the base game) are configured using DVars, or Dynamic Variables.
 DVars can be set using the console or configuration files (.cfg).
+Some DVars can be set in the game's options menu, but most of them can only be set in the console. Many DVars are restricted to the server or client, some will also depend on other DVars like `sv_cheats` being set to a specific value.
 
 # Console
 To open the console, press `~` (tilde) on your keyboard. This key may differ by layout, its usually the key under `esc`, next to `1`.
 
-IW4x supports autocompletion, so you can type the beginning of a DVar name and press `tab` to autocomplete it.
+The IW4x console supports autocompletion, so you can type the beginning of a DVar name and press `tab` to autocomplete it.
+You can expand the whole console using `shift + ~`.
+
 If you want to set the value of a new/undefined DVar, you can do so using the `set` command:
 
 ```
@@ -14,11 +17,14 @@ set cg_coolDvar 1
 ```
 
 # Configuration Files
-IW4x can use multiple configuration files
+IW4x automatically loads the following configuration files:
 - `players/iw4x_config.cfg`
 - `players/autoexec.cfg`
 
 Server configs are stored in the userraw folder instead, they can be named however you like. Pre-made configs are available on [GitHub](https://github.com/iw4x/iw4-server-configs).
-:::download
-https://github.com/iw4x/iw4-server-configs/archive/refs/heads/main.zip
-:::
+
+Config files can be loaded using the `exec` command.
+
+```
+exec my_custom_config.cfg
+```
