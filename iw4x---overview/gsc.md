@@ -166,6 +166,13 @@ foreach (player in players)
 }
 ```
 
+## Strings
+
+```
+- `isSubStr`
+- `string_starts_with`
+```
+
 ## Threads and Coroutines
 
 GSC utilizes threads to handle concurrent execution.
@@ -229,6 +236,30 @@ while (true)
 - `giveLoadout`
   - player; emitted when the player is given their chosen loadout (on spawn & class change)
 
+## HUD
+It's possible to create fully custom HUDs.
+`createFontString` and `createServerFontString` can be used to create text elements on either a specific player or the entire server.
+
+```cpp
+info = level createServerFontString("objective", 0.95);
+info setPoint("CENTER", "BOTTOM", 0, -10);
+info.glowalpha = .6;
+info.hideWhenInMenu = true;
+info.glowcolor = ( .7, .3, 1 );
+info setText("Fancy texty");
+```
+
+## Weapons/Perks
+- `player getCurrentWeapon()`
+- `player takeWeapon("semtex_mp")`
+- `player _unsetperk("specialty_pistoldeath")`
+- `player maps\mp\perks\_perks::givePerk("specialty_quickdraw")`
+- `player switchToWeapon(weapon)`
+
+Weapons are built to a weapon string which contains the base weapon, attachments and camos.
+To check for a base weapon `isSubStr` can be used `isSubStr(weapon, "cheytac")` (cheytac = intervention).
+
+
 ## Comments
 
 Comments are used to annotate and explain code. GSC supports single-line and multi-line comments.
@@ -260,12 +291,57 @@ Scripts are loaded automatically from the `userraw/scripts` folder. They are sim
 ### replaceFunc
 
 `replaceFunc` allows replacing an existing function with a new one.
-```cppinit()
+
+```cpp
+#include maps\mp\gametypes\_damage;
+
+init()
 {
-        level thread onPlayerConnect();
-        level thread hudLoop();
         replaceFunc(maps\mp\gametypes\_damage::Callback_PlayerDamage, ::playerDamage_stub);
 }
+
+isAllowedWeapon(weapon) {
+        if (!(
+                isSubStr(weapon, "thermal") ||
+                isSubStr(weapon, "heartbeat") ||
+                isSubStr(weapon, "acog") ||
+                isSubStr(weapon, "silencer") ||
+                isSubStr(weapon, "riotshield")
+        ) && (
+                isSubStr(weapon, "cheytac") ||
+                isSubStr(weapon, "m40a3") ||
+                isSubStr(weapon, "throwingknife")
+        )) {
+                return true;
+        }
+        return false;
+}
+
+playerDamage_stub(eInflictor, eAttacker, iDamage, iDFlags, sMeansOfDeath, sWeapon, vPoint, vDir, sHitLoc, psOffsetTime) {
+        damage = 0;
+        if (isAllowedWeapon(sWeapon)) {
+                damage = 1000;
+        }
+        if (sMeansOfDeath == "MOD_FALLING") {
+                damage = iDamage * 0.8;
+        }
+
+        maps\mp\gametypes\_damage::Callback_PlayerDamage_internal(
+                eInflictor,
+                eAttacker,
+                self,
+                damage,
+                iDFlags,
+                sMeansOfDeath,
+                sWeapon,
+                vPoint,
+                vDir,
+                sHitLoc,
+                psOffsetTime
+        );
+}
+
+```
 
 ## Example scripts
 
