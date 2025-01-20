@@ -219,6 +219,16 @@ while (true)
 }
 ```
 
+## Events
+- `connect`
+  - player; emitted on player connected
+- `disconnect`
+  - player, emitted on disconnect
+- `player_spawned`, `spawned`
+  - player; emitted on player (re)spawn
+- `giveLoadout`
+  - player; emitted when the player is given their chosen loadout (on spawn & class change)
+
 ## Comments
 
 Comments are used to annotate and explain code. GSC supports single-line and multi-line comments.
@@ -250,6 +260,12 @@ Scripts are loaded automatically from the `userraw/scripts` folder. They are sim
 ### replaceFunc
 
 `replaceFunc` allows replacing an existing function with a new one.
+```cppinit()
+{
+        level thread onPlayerConnect();
+        level thread hudLoop();
+        replaceFunc(maps\mp\gametypes\_damage::Callback_PlayerDamage, ::playerDamage_stub);
+}
 
 ## Example scripts
 
