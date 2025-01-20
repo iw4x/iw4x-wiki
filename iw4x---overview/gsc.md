@@ -90,7 +90,15 @@ if (condition)
 
 Loops allow for repeated execution of code blocks.
 GSC supports `for`, `foreach` and `while` loops. Infinite loops are usually created using `for (;;)`.
-Loops can be paused using `waittill` and  until a certain event occurs, for example `waittill("connected", player);` will pause the loop until a player connects to the match. `wait(0.1)` is used to pause the loop for a set amount of time. The minimum wait time used is usually 0.05. Loops support the typical `continue` and `break` statements.
+Loops can be paused using `waittill` and `waittill_either` until a certain event occurs, for example `waittill("connected", player);` will pause the loop until a player connects to the match. `wait(0.1)` is used to pause the loop for a set amount of time. The minimum wait time used is usually 0.05. Loops support the typical `continue` and `break` statements.
+
+- `for(;;)`, `while(true)` - Infinite loop
+- `for (i = 0;i < 15;i++)`, `while (i < 15)` - Conditional loop
+- `foreach (player in level.players)`
+- `waittill("connected", player)` - Pause thread until event is fired
+- `waittill_either("weapon_fired", "giveLoadout")`
+- `wait(0.1)`, `wait(15)`
+- `continue`, `break`
 
 
 ```cpp
