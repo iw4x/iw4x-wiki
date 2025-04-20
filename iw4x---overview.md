@@ -48,4 +48,6 @@ Installing IW4x manually is almost as easy, you need to acquire 3 things:
 - The [IW4x Client](https://github.com/iw4x/iw4x-client/releases/latest)
 - And the [IW4x Rawfiles](https://github.com/iw4x/iw4x-rawfiles/releases/latest)
 
+A detailed guide is available on [iw4x.dev/install](https://iw4x.dev/install)
+
 To install IW4x simply extract the client and rawfiles to your MW2 base directory, running iw4x.exe should now start up IW4x.
